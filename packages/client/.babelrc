@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "useBuiltIns": "entry",
+          "modules": false,
+          "loose": false
+        }
+      }
+    ],
+    "@babel/preset-stage-2",
+    "@babel/preset-react"
+  ]
+}

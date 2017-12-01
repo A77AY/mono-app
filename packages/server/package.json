@@ -1,0 +1,16 @@
+{
+  "name": "@mono-app/server",
+  "version": "0.1.0",
+  "description": "Server",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "babel-node src/server"
+  },
+  "dependencies": {
+    "@mono-app/client": "^0.1.0",
+    "express": "^4.16.2",
+    "spdy": "^3.4.7"
+  }
+}

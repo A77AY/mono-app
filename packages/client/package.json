@@ -1,0 +1,15 @@
+{
+  "name": "@mono-app/client",
+  "version": "0.1.0",
+  "description": "Client",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production"
+  },
+  "dependencies": {
+    "@mono-app/app": "^0.1.0"
+  }
+}

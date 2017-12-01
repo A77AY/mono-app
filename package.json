@@ -1,0 +1,34 @@
+{
+  "name": "mono-app",
+  "version": "0.1.0",
+  "description": "Monorepo boilerplate root",
+  "main": "index.js",
+  "repository": "https://github.com/KrickRay/mono-app.git",
+  "author": "Rinat Arsaev <krickray@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes; del-cli node_modules",
+    "client": "lerna run --scope @mono-app/client start --stream",
+    "server": "lerna run --scope @mono-app/server start --stream"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/node": "^7.0.0-beta.35",
+    "@babel/polyfill": "^7.0.0-beta.35",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "@babel/preset-react": "^7.0.0-beta.34",
+    "@babel/preset-stage-2": "^7.0.0-beta.34",
+    "babel-loader": "^8.0.0-beta.0",
+    "del-cli": "^1.1.0",
+    "lerna": "^2.5.1",
+    "prettier": "^1.9.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-merge": "^4.1.1"
+  }
+}
